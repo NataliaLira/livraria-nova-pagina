@@ -5,6 +5,7 @@ const db = require('./database')
 const app = express()
 
 app.use(express.json())
+app.use(express.urlencoded( { extended: true }))
 
 db.hasConnection()
 
