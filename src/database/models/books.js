@@ -25,6 +25,9 @@ const Books = db.define(
     stock: {
       type: DataTypes.INTEGER
     },
+    image: {
+      type: DataTypes.STRING
+    },
     createdAt: {
       allowNull: true,
       type: DataTypes.DATE
