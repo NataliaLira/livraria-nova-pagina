@@ -1,9 +1,11 @@
+require('dotenv').config()
+
 const cloudinary = require('cloudinary')
 
 cloudinary.config({ 
-    cloud_name: 'natilira', 
-    api_key: '349441726598591', 
-    api_secret: 'QJ3aZvNe6SgYmwCRUc29mnFEoz8' 
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME, 
+    api_key:  process.env.CLOUDINARY_API_KEY, 
+    api_secret:  process.env.CLOUDINARY_API_SECRET 
   });
 
 
